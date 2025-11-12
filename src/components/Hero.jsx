@@ -2,8 +2,18 @@ import React from 'react';
 
 function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-accent">
-      <div className="absolute inset-0 bg-black opacity-10"></div>
+    <section className="relative min-h-screen flex items-center justify-center bg-accent overflow-hidden">
+      {/* Background Image - Replace with your image path */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(/images/hero/hero-1.jpg)',
+        }}
+      ></div>
+      
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-primary opacity-60"></div>
+      
       <div className="relative z-10 text-center text-white px-6 py-20">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
           Creative Collective
