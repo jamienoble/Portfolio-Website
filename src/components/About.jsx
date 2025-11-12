@@ -123,7 +123,7 @@ function About() {
                 key={index}
                 className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
               >
-                <div className="h-48 bg-gradient-to-br from-accent to-amber"></div>
+                <div className="h-48 bg-accent"></div>
                 <div className="p-6">
                   <h4 className="text-xl font-bold text-primary mb-1">{member.name}</h4>
                   <p className="text-accent font-semibold mb-2">{member.role}</p>

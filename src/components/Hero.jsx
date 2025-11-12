@@ -2,7 +2,7 @@ import React from 'react';
 
 function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-accent to-amber">
+    <section className="relative min-h-screen flex items-center justify-center bg-accent">
       <div className="absolute inset-0 bg-black opacity-10"></div>
       <div className="relative z-10 text-center text-white px-6 py-20">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">

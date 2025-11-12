@@ -28,7 +28,7 @@ function Menu({ isOpen, toggleMenu, navigateTo, currentPage }) {
 
       {/* Slide-out Menu */}
       <div
-        className={`fixed top-0 left-0 right-0 bg-gradient-to-b from-primary to-accent text-white shadow-2xl transform transition-transform duration-300 ease-in-out z-40 ${
+        className={`fixed top-0 left-0 right-0 bg-primary text-white shadow-2xl transform transition-transform duration-300 ease-in-out z-40 ${
           isOpen ? 'translate-y-0' : '-translate-y-full'
         }`}
       >

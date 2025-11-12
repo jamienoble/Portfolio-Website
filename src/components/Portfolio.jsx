@@ -128,7 +128,7 @@ function Portfolio() {
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+              <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                 <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
                 <p className="text-gray-200 text-sm mb-2">{item.description}</p>
                 <p className="text-amber text-sm font-semibold">

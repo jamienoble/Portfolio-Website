@@ -38,7 +38,7 @@ function Contact() {
   };
 
   return (
-    <section className="min-h-screen py-20 bg-gradient-to-br from-bglight to-gray-100">
+    <section className="min-h-screen py-20 bg-bglight">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
