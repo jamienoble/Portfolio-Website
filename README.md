@@ -62,6 +62,56 @@ To preview the production build locally:
 npm run preview
 ```
 
+## Deploying to GitHub Pages
+
+This project is configured to deploy automatically to GitHub Pages. There are two deployment methods:
+
+### Method 1: Automatic Deployment with GitHub Actions (Recommended)
+
+The site will automatically deploy when you push to the main branch.
+
+**Setup Steps:**
+
+1. Push your code to GitHub:
+   ```bash
+   git add .
+   git commit -m "Initial commit"
+   git push origin main
+   ```
+
+2. Go to your GitHub repository settings:
+   - Navigate to **Settings** → **Pages**
+   - Under **Build and deployment**, set:
+     - **Source**: GitHub Actions
+   
+3. The GitHub Action will automatically build and deploy your site
+
+4. Your site will be available at: `https://jamienoble.github.io/Portfolio-Website/`
+
+### Method 2: Manual Deployment with gh-pages
+
+If you prefer manual deployment:
+
+1. Install dependencies (if not already done):
+   ```bash
+   npm install
+   ```
+
+2. Deploy to GitHub Pages:
+   ```bash
+   npm run deploy
+   ```
+
+3. Go to your repository settings on GitHub:
+   - Navigate to **Settings** → **Pages**
+   - Under **Build and deployment**, set:
+     - **Source**: Deploy from a branch
+     - **Branch**: gh-pages / (root)
+
+4. Your site will be live at: `https://jamienoble.github.io/Portfolio-Website/`
+
+**Note**: After the first deployment, any push to the main branch will automatically trigger a new deployment if using Method 1.
+
 ## Project Structure
 
 ```
