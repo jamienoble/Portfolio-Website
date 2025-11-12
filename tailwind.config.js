@@ -7,10 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#111827',      // Deep Ink Blue
-        accent: '#2563EB',       // Electric Blue
-        amber: '#F59E0B',        // Soft Amber
-        bglight: '#F9FAFB',      // Off-White
+        primary: '#151515',      // Night (dark black)
+        accent: '#68B6B9',       // Verdigris (teal blue)
+        amber: '#FBC139',        // Amber (golden yellow)
+        tomato: '#F45835',       // Tomato (coral red)
+        bglight: '#F6F3EA',      // Floral white (off-white)
         neutral: '#6B7280',      // Neutral Grey
       },
     },
