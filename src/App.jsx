@@ -17,7 +17,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-bglight">
       <Menu 
         isOpen={menuOpen} 
         toggleMenu={toggleMenu} 

@@ -89,10 +89,10 @@ function Portfolio() {
     <section id="portfolio" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             Our Portfolio
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-neutral max-w-2xl mx-auto">
             Explore our diverse collection of creative work from our talented team members
           </p>
         </div>
@@ -105,8 +105,8 @@ function Portfolio() {
               onClick={() => setSelectedCategory(category)}
               className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
                 selectedCategory === category
-                  ? 'bg-indigo-600 text-white shadow-lg'
-                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                  ? 'bg-accent text-white shadow-lg'
+                  : 'bg-bglight text-neutral hover:bg-gray-200'
               }`}
             >
               {category.charAt(0).toUpperCase() + category.slice(1)}
@@ -131,14 +131,14 @@ function Portfolio() {
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                 <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
                 <p className="text-gray-200 text-sm mb-2">{item.description}</p>
-                <p className="text-indigo-300 text-sm font-semibold">
+                <p className="text-amber text-sm font-semibold">
                   Created by: {item.creator}
                 </p>
               </div>
               <div className="p-4 bg-white">
-                <h3 className="text-lg font-semibold text-gray-800 mb-1">{item.title}</h3>
-                <p className="text-sm text-gray-600 mb-2">{item.description}</p>
-                <p className="text-sm text-indigo-600 font-medium">By {item.creator}</p>
+                <h3 className="text-lg font-semibold text-primary mb-1">{item.title}</h3>
+                <p className="text-sm text-neutral mb-2">{item.description}</p>
+                <p className="text-sm text-accent font-medium">By {item.creator}</p>
               </div>
             </div>
           ))}

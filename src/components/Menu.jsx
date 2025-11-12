@@ -6,7 +6,7 @@ function Menu({ isOpen, toggleMenu, navigateTo, currentPage }) {
       {/* Menu Icon Button */}
       <button
         onClick={toggleMenu}
-        className="fixed top-6 right-6 z-50 p-3 bg-indigo-600 text-white rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300 hover:scale-110"
+        className="fixed top-6 right-6 z-50 p-3 bg-accent text-white rounded-full shadow-lg hover:bg-primary transition-all duration-300 hover:scale-110"
         aria-label="Toggle menu"
       >
         <svg
@@ -28,7 +28,7 @@ function Menu({ isOpen, toggleMenu, navigateTo, currentPage }) {
 
       {/* Slide-out Menu */}
       <div
-        className={`fixed top-0 left-0 right-0 bg-gradient-to-b from-indigo-600 to-purple-700 text-white shadow-2xl transform transition-transform duration-300 ease-in-out z-40 ${
+        className={`fixed top-0 left-0 right-0 bg-gradient-to-b from-primary to-accent text-white shadow-2xl transform transition-transform duration-300 ease-in-out z-40 ${
           isOpen ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
@@ -37,8 +37,8 @@ function Menu({ isOpen, toggleMenu, navigateTo, currentPage }) {
             <li>
               <button
                 onClick={() => navigateTo('home')}
-                className={`text-3xl font-bold hover:text-indigo-200 transition-colors ${
-                  currentPage === 'home' ? 'text-yellow-300' : ''
+                className={`text-3xl font-bold hover:text-bglight transition-colors ${
+                  currentPage === 'home' ? 'text-amber' : ''
                 }`}
               >
                 Home / Portfolio
@@ -47,8 +47,8 @@ function Menu({ isOpen, toggleMenu, navigateTo, currentPage }) {
             <li>
               <button
                 onClick={() => navigateTo('contact')}
-                className={`text-3xl font-bold hover:text-indigo-200 transition-colors ${
-                  currentPage === 'contact' ? 'text-yellow-300' : ''
+                className={`text-3xl font-bold hover:text-bglight transition-colors ${
+                  currentPage === 'contact' ? 'text-amber' : ''
                 }`}
               >
                 Contact
